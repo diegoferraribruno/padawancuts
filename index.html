@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<meta charset="UTF-8"/>
+<head>
+<style>
+h1{
+color:#0055ff;
+}
+#bemvindos{
+font-size:45px;
+color:red;
+}
+li{
+ list-style-type: square;
+    color: green;
+}
+.fruta{
+color:blue;
+}
+</style>
+<title>Tutorial Básico de HTML CSS e JavaScript</title>https://www.cirogomes.com.br/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fbanner.66f8981a.png&w=1920&q=75
+</head>
+
+<body>
+<div id="bemvindos">oi, </div>
+
+<p>Acesse: <a href="http://cirogomes.com.br" target=blank
+> CiroGomes.com.br
+<img src="image.webp" /> </a>
+
+<ul id="lista">
+    <li>item 1</li>
+    <li>item 2</li>
+</ul>
+<p class='fruta'>
+- oi!<br /> -oi, tudo bem?
+
+</p>
+<p><h1>outro título</h1>
+texto do parágrafo</p>
+<script>
+var nome = "pedro";
+var itens = ["banana","pera","uva","maçã"]
+document.getElementById("bemvindos").innerHTML += nome;
+for(i in itens){ 
+document.getElementById("lista").innerHTML += "<li>"+itens[i]+"</li>";
+}
+</script>
+
+</body>
+</html>
